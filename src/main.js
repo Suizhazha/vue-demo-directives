@@ -1,8 +1,17 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from "vue/dist/vue.js";
 
 Vue.config.productionTip = false
 
 new Vue({
-  render: h => h(App),
+
+  template:`
+  <div>
+  <button v-on2:click = 'hi'>点我</button>
+</div>
+  `,
+  methods:{
+    hi(){
+      console.log('hi')
+    }
+  }
 }).$mount('#app')
